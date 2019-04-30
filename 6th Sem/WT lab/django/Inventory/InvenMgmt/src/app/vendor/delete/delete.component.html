@@ -1,0 +1,178 @@
+<style> 
+	input[type=text] {
+	  width: 200px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-image: url('searchicon.png');
+	  background-position: 10px 10px; 
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  -webkit-transition: width 0.4s ease-in-out;
+	  transition: width 0.4s ease-in-out;
+	}
+
+	.button {
+	  
+	  border: none;
+	  color: white;
+	  padding: 20px;
+	  text-align: center;
+	  line-height: 2px;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 12px;
+	  margin: 4px 2px;
+	  height: 20px;
+	  border-radius: 12px;
+	  cursor: pointer
+	}
+
+	.button1 {background-color: #6ac1ff;}
+	.button2 {margin-left: 850px;}
+	.button3 {background-color: #ff7961;}
+	.button4 {margin-right: 830px;}
+	.button5 {width: 150px;}
+
+	input[type=text]:focus {
+	  width: 75%;
+	}
+	.mystyle{
+		background-color: #e0e0e0;
+		width: 75%;
+		border-radius:12px;
+		height: 100px;
+	}
+
+	.btn-group button {
+		 
+		border: none; 
+		color: black; 
+		padding: 10px 24px; 
+		cursor: pointer; 
+		float: left;
+		width: 170px;
+		height: 70px;
+		margin-right: 10px;
+		margin-left:52px;
+		margin-top: 15px;
+		margin-bottom: 15px
+	}
+
+	.btn-group1 button {
+		 
+		border: none; 
+		color: black; 
+		padding: 10px 24px; 
+		cursor: pointer; 
+		float: left;
+		width: 200px;
+		height: 50px;
+		margin-right: 10px;
+		margin-left:100px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-radius: 12px
+	}
+	.exit button{ 
+		color: black; 
+		padding: 10px 24px; 
+		cursor: pointer; 
+		float: left;
+		margin-left: 20px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-radius: 12px;
+		text-align: center;
+		color: #d32f2f;
+		border: 1px solid #d32f2f;  
+	}
+
+	.btn1 button{
+		background-color: #bef67a;
+	}
+	.updateP{
+		background-color: #6ac1ff;
+	}
+	.addP{
+		background-color: #ffff6b;	
+	}
+	.deleteP {
+		background-color: #ff7961;
+	}
+	.btn-group:after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	}
+	.h3 {
+		margin-left: 200px;
+		color: #484848;
+		font-family: "Trebuchet MS"
+	}
+	table {
+  border-collapse:separate;
+  width: 100%;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  align-content: center;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  width: 50px;
+}
+
+tr:nth-child(even){background-color: #e0e0e0}
+
+th {
+  background-color: #bef67a;
+  color: white;
+}
+	</style>
+
+	<img src={{imagePath}} width="30%" height="120px">
+	<h1 class="h3">Dashboard</h1>
+	<div align="center">
+		<div class="mystyle">
+				<div align="center">
+						<br>
+						<table id="customers">
+							<tr>
+								<th>Total Products</th>
+								<th>Products sold</th>
+								<th>Low Stock</th>
+								<th>Stock</th>
+							</tr>
+							<tr>
+								<td>150</td>
+								<td>150</td>
+								<td>150</td>
+								<td>150</td>
+							</tr>
+						</table>
+					</div>
+           	<br>
+           	<br>
+           	<div class="btn-group1">
+							<input class="addP" type="button" value="Add Products" name="add" [routerLink]="['add']"> 
+							<input class="updateP" type="button" value="Update Inventory" name="update" [routerLink]="['update']">
+							<input class="deleteP" type="button" value="Delete Products" name="delete" [routerLink]="['delete']"> 
+           	</div>
+           	
+		</div>
+	</div>
+	<br><br><br><br>
+	<div align="center">
+			<br>
+			<input type="text" name="name" placeholder="Product name.." required>
+			<label style="color: #d32f2f;"> *</label>
+			<br><br>
+			<input type="text" name="quantity" placeholder="24 Hexdigit ID" required>
+			<label style="color: #d32f2f;"> *</label>
+			<br><br>
+			<button>Submit</button>
+			<button style="margin-left: 20px;">Reset</button>
+</div>

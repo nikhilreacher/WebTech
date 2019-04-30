@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Customer</title>
+	</head>
+
+	<style> 
+	input[type=text] {
+	  width: 200px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-image: url('searchicon.png');
+	  background-position: 10px 10px; 
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  -webkit-transition: width 0.4s ease-in-out;
+	  transition: width 0.4s ease-in-out;
+	}
+
+	.button {
+	  
+	  border: none;
+	  color: white;
+	  padding: 20px;
+	  text-align: center;
+	  line-height: 2px;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 12px;
+	  margin: 4px 2px;
+	  height: 20px;
+	  border-radius: 12px;
+	  cursor: pointer
+	}
+
+	.button1 {background-color: #6ac1ff;}
+	.button2 {margin-left: 850px;}
+	.button3 {background-color: #ff7961;}
+	.button4 {margin-right: 830px;}
+	.button5 {width: 150px;}
+
+	input[type=text]:focus {
+	  width: 75%;
+	}
+	.mystyle{
+		background-color: #e2f1f8;
+		width: 75%;
+		border-radius:12px;
+		height: 150px;
+	}
+
+	.btn-group button {
+		background-color: #bef67a; 
+		border: none; 
+		color: black; 
+		padding: 10px 24px; 
+		cursor: pointer; 
+		float: left;
+		width: 150px;
+		height: 95px;
+		margin-right: 20px;
+		margin-left:20px;
+		margin-top: 15px;
+		margin-bottom: 15px
+	}
+
+	.btn-group:after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	}
+	</style>
+
+	<body>
+		<img src={{imagePath}} width="30%" height="120px">
+		<div align="center">
+			<form>
+	  			<input type="text" name="search" placeholder="">
+			</form>
+			<br>
+			<button class="button button1">Product Search</button>
+			<br><br>
+        	<br>
+          	<button class="button button3 button4 button5">Add to Cart</button>
+		</div>
+        
+	</body>
+</html>
+<router-outlet></router-outlet>
